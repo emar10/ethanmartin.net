@@ -1,0 +1,98 @@
+/* Let's reset those pesky browser defaults. */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Sitewide styles and defaults */
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  color: #444444;
+  background-color: #eeeeee;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0.5em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cairo', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #5058ed;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h1 a {
+  color: #444444;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+
+  padding: .5em;
+  font-family: 'Cairo', sans-serif;
+  text-transform: uppercase;
+}
+
+main {
+  flex: 1;
+  padding: 30px 0;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Convenience classes */
+.centered {
+  text-align: center;
+}
+
+.warning {
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  padding: .5em;
+  color: #ffffff;
+  border-radius: 10px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ea250b,
+    #ea250b 10px,
+    #c11d07 10px,
+    #c11d07 20px
+  );
+}
+
+.warning a {
+  color: #ffffff;
+}
