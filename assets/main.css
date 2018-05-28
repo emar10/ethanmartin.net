@@ -7,7 +7,7 @@
 /* Sitewide styles and defaults */
 body {
   font-family: 'EB Garamond', serif;
-  font-size: 18px;
+  font-size: 110%;
   color: #444444;
   background-color: #eeeeee;
 }
@@ -69,7 +69,6 @@ main {
 }
 
 footer {
-  padding-top: 20px;
   text-align: center;
 }
 

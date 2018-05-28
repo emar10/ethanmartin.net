@@ -2,9 +2,17 @@
 layout: default
 ---
 <div class="warning">
-  <p><strong>Note: </strong>The blog hasn't been implemented yet. Coming soon!</p>
+  <p><strong>Note: </strong>The blog is currently in progress. Posts will mostly be for testing, elements will be missing, and styling will be a bit odd.</p>
 </div>
 <div class="centered">
-  <h1>Ethan's Blog of Coding Catastrophe</h1>
-  <p>There doesn't seem to be anything here yet...</p>
+  <h1>My ramblings on programming and other things.</h1>
+
+  <ul id="post-list">
+    {% for post in site.posts %}
+    <li>
+      <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
