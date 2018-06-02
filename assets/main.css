@@ -27,35 +27,52 @@ a {
 
 code {
   font-family: 'Source Code Pro', monospace;
+  font-size: 0.80em;
+  background: #cccccc;
+  padding: 0 0.25em;
+}
+
+pre {
+  background: #ffffff;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+pre code {
+  background: none;
+}
+
+ul, ol {
+  list-style-position: inside;
 }
 
 #wrapper {
   margin: 0 auto;
   padding: 0 25px;
-  max-width: 750px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-header {
+#top_head {
   text-align: center;
   letter-spacing: 2px;
 }
 
-header h1 {
+#top_head h1 {
   margin: 0;
 }
 
-header h1 a {
+#top_head h1 a {
   color: #444444;
 }
 
-header ul {
+#top_head ul {
   list-style-type: none;
 }
 
-header li {
+#top_head li {
   display: inline-block;
 
   padding: .5em;
@@ -94,6 +111,41 @@ footer {
 
 .warning a {
   color: #ffffff;
+}
+
+/* post styles */
+article header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+article header p {
+  font-weight: bold;
+  margin: 0;
+}
+
+article img {
+  display: block;
+
+  margin: 0 auto;
+  width: 50%;
+  border: 3px solid #cccccc;
+  border-radius: 3px;
+}
+
+article img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.90em;
+}
+
+article hr {
+  margin: 2em auto;
+  width: 75%;
+}
+
+article h1 {
+  font-size: 1.75em;
 }
 
 /* syntax highlighting styles borrowed from minima */
