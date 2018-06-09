@@ -4,4 +4,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Cairo:200,400,700|EB+Garamond:400,700|Source+Code+Pro" rel="stylesheet">
   <link href="/assets/main.css" rel="stylesheet">
+
+  {% if page.needsmath == true %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  {% endif %}
 </head>

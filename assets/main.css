@@ -43,6 +43,29 @@ pre code {
   background: none;
 }
 
+blockquote {
+  margin: 1em;
+  padding: 0.5em;
+}
+blockquote:before {
+  display: block;
+  font-size: 4em;
+  line-height: 0;
+  content: open-quote;
+}
+blockquote:after {
+  font-size: 4em;
+  line-height: 0;
+  display: block;
+  content: close-quote;
+  text-align: right;
+}
+blockquote p {
+  margin-left: 3em;
+  font-size: 1.25em;
+  font-style: italic;
+}
+
 ul, ol {
   list-style-position: inside;
 }
@@ -50,7 +73,7 @@ ul, ol {
 #wrapper {
   margin: 0 auto;
   padding: 0 25px;
-  max-width: 700px;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -62,6 +85,7 @@ ul, ol {
 }
 
 #top_head h1 {
+  font-size: 2.5em;
   margin: 0;
 }
 
@@ -114,6 +138,24 @@ footer {
   color: #ffffff;
 }
 
+/* blog index */
+#post-list {
+  list-style-type: none;
+}
+
+#post-list .post-date {
+  color: #777777;
+  margin-bottom: 0;
+}
+
+#post-list h2 {
+  margin: 0;
+}
+
+#post-list .post-preview {
+  margin: 0;
+}
+
 /* post styles */
 article header h1 {
   font-size: 2em;
@@ -147,6 +189,14 @@ article hr {
 
 article h1 {
   font-size: 1.75em;
+}
+
+.footnotes {
+  font-size: 0.75em;
+}
+
+.footnotes p {
+  display: inline;
 }
 
 /* syntax highlighting styles borrowed from minima */

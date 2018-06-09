@@ -12,6 +12,7 @@ layout: default
     <li>
       <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="post-preview">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
     </li>
     {% endfor %}
   </ul>
