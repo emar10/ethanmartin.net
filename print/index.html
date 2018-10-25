@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ethan Martin</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,400,700|EB+Garamond:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'EB Garamond', serif;
+      color: black;
+      background-color: white;
+      margin: 30px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      letter-spacing: -0.5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    hr {
+      margin: 0 40px;
+      border: 1px solid;
+    }
+
+    li {
+      margin-left: 1.5em;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    header h1 {
+      letter-spacing: 2px;
+    }
+
+    header ul {
+      list-style-type: none;
+    }
+
+    header li {
+      display: inline-block;
+      font-family: 'Cairo', sans-serif;
+      padding: 0.5em;
+      margin: 0;
+    }
+
+    .section {
+      padding: 10px 0;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .col {
+      flex: 50%;
+      padding-right: 10px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <header id="top_head">
+      <h1>Ethan Martin</h1>
+      <ul>
+        <li><a href="https://github.com/emar10" target="_blank"><span class="fab fa-github"></span> emar10</a></li>
+        <li><a href="https://www.linkedin.com/in/ethan-martin" target="_blank"><span class="fab fa-linkedin-in"></span> Ethan-Martin</a></li>
+        <li><a href="https://ethanmartin.net" target="_blank"><span class="fas fa-link"></span> EthanMartin.net</a></li>
+        <li><a href="mailto:ethan@ethanmartin.net"><span class="fas fa-envelope"></span> ethan@ethanmartin.net</a></li>
+        <li><span class="fas fa-phone"></span> (240) 561-4004</li>
+      </ul>
+      <hr>
+    </header>
+
+    {% include resume.html %}
+</html>
